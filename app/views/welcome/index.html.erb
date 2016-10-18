@@ -7,7 +7,7 @@
                   <h3>The Dating Site for Ruby Experts</h3>
                   <p>CoderDating is the first dating website just for experienced Ruby on Rails engineers.</p>
                   <div class="signup-form">
-                    <%= form_for(User.new) do |f| %>
+                    <%= form_for @user do |f| %>
                       <div class="form-group">
                         <%= f.text_field 'email', class: 'form-control', placeholder: 'Your E-mail' %>
                       </div>
